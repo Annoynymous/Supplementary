@@ -3,21 +3,22 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     margin: 0;
     padding: 0;
 }
 
-.forget_blond {
+.video {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 80%;
-    margin-top: 20px;
+    max-width: 90%;
 }
 
-video {
-    max-width: 100%;
-    height: auto;
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 70%;
 }

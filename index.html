@@ -3,21 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Supplementary Videos</title>
+    <link rel="stylesheet" href="design.css">
 </head>
 <body>
 <h1>Taming Normalizing Flows - Supplementary Videos (Paper ID 9556) </h1>
-    <div class="forget_blond">
+    <div class="description">
+        Below are different videos demonstrating the process of our method, when it is used to tame a model in order to change some attribute.<br>
+        Each video is created by passing the same latent vectors through the tamed network, along the process.
+    </div>
+    <div class="video">
         <h2>Forget the blond hair attribute</h2>
+        <div class="description">
+            The video below shows the process of "forgetting" the attribute "Blond Hair".
+        </div>
         <video controls autoplay muted loop>
             <source src="videos/forget_blond.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
 
-    <div class="forget_blond">
+    <div class="video">
         <h2>Change different attributes of the same identity</h2>
+        <div class="description">
+            Each row in the video below corresponds to the same identity, and the different columns show how different attribute changes can be applied.<br>
+        </div>
         <video controls autoplay muted loop>
             <source src="videos/same_identity_change.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="video">
+        <h2>Increase the attributes "Blond Hair" and "Smiling"</h2>
+        <div class="description">
+            The video below shows the process of emphasizing the attributes "Blond Hair" and "Smiling".<br>
+            As our method depends on the data we use, we see that since there aren't many blond males in the data,
+            the results are less significant on males for this scenario (see identity in 2nd row, 1st column).
+        </div>
+        <video controls autoplay muted loop>
+            <source src="videos/increase_blond_smiling.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="video">
+        <h2>Increase the attribute "Eyeglasses"</h2>
+        <div class="description">
+            The video below shows the process of emphasizing the attribute "Eyeglasses".<br>
+            Again, as a result of the data in CelebA, since the dataset has more images of males with eyeglasses,
+            this process transitions some female identities into male ones. (see identity in 2nd row, 4th column).
+        </div>
+        <video controls autoplay muted loop>
+            <source src="videos/increase_glasses.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
